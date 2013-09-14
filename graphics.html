@@ -10,35 +10,39 @@
 		
 		<p>
 		<input type="text" id="func" size="80"/>
-		<input type="button" value="0" onclick="" />
-		<input type="button" value="1" onclick="" />
-		<input type="button" value="2" onclick="" />
-		<input type="button" value="3" onclick="" />
-		<input type="button" value="4" onclick="" />
-		<input type="button" value="5" onclick="" />
-		<input type="button" value="6" onclick="" />
-		<input type="button" value="7" onclick="" />
-		<input type="button" value="8" onclick="" />
-		<input type="button" value="9" onclick="" />
+		<input type="button" value="0" onclick="" vs="0" />
+		<input type="button" value="1" onclick="" vs="1" />
+		<input type="button" value="2" onclick="" vs="2" />
+		<input type="button" value="3" onclick="" vs="3" />
+		<input type="button" value="4" onclick="" vs="4" />
+		<input type="button" value="5" onclick="" vs="5" />
+		<input type="button" value="6" onclick="" vs="6" />
+		<input type="button" value="7" onclick="" vs="7" />
+		<input type="button" value="8" onclick="" vs="8" />
+		<input type="button" value="9" onclick="" vs="9" />
 		</p>
 		<p>
-		<input type="button" value="cos" onclick=""/>
-		<input type="button" value="sin" onclick="" />
-		<input type="button" value="tg" onclick="" />
-		<input type="button" value="Ctg" onclick="" />
-		<input type="button" value="*" onclick="" />
-		<input type="button" value="/" onclick="" />
-		<input type="button" value="+" onclick="" />
-		<input type="button" value="-" onclick="" />
-		<input type="button" value="x" onclick="" />
-		<input type="button" value="x^y" onclick="" />
-		<input type="button" value="e^y" onclick="" />
-		<input type="button" value="&radic;" onclick="" />
+		<input type="button" value="cos" onclick="" vs="Math.cos(x)" />
+		<input type="button" value="sin" onclick="" vs="Math.sin(x)" />
+		<input type="button" value="tg" onclick="" vs="Math.tan(x)" />
+		<input type="button" value="Ctg" onclick="" vs="(1 / Math.tan(x))" />
+		<input type="button" value="*" onclick="" vs="*" />
+		<input type="button" value="/" onclick="" vs="/" />
+		<input type="button" value="+" onclick="" vs="+" />
+		<input type="button" value="-" onclick="" vs="-" />
+		<input type="button" value="x" onclick="" vs="x" />
+		<input type="button" value="x^y" onclick="" vs="Math.pow(x,y)" />
+		<input type="button" value="e^y" onclick="" vs="Math.exp(x)" />
+		<input type="button" value="&radic;" onclick="" vs="Math.sqrt(x)" />
+		<input type="button" value="draw" onclick="draw()" />
+		<input type="button" value="clear" onclick="clean()" />
+		<input type="number" value="1" id="scale" />
 		</p>
 		</div>
 		<div class="graph">
 		<canvas  id="graph">
 		</canvas>
 		</div>
+		<script src="graphics.js"></script>
 	</body>
 </html>
